@@ -5,7 +5,8 @@
     width: 80%; /* Ajusta el ancho según tu preferencia */
 }
 
-.titulo1{
+.titulo1 h1{
+    text-align: center;
     color: #1a237e;
 }
 

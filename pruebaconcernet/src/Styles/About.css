@@ -1,0 +1,57 @@
+.about__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; /* Ajusta el ancho según tu preferencia */
+}
+
+.tituloAbout h1{
+    text-align: center;
+    color: #14217e;
+}
+
+.tituloAbout,
+.imagenAbout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px; /* Espacio entre cada sección */
+}
+
+.imagenAbout,
+.parrafoAbout{
+    width: 70%;
+}
+
+.imagenAbout img{
+    width: 300px; /* Tamaño de la imagen aumentado a 300px */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    border: 2px solid #ccc; /* Borde de 2px sólido gris */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Transición de la animación */
+}
+
+.imagenAbout img:hover{
+    transform: scale(1.1); /* Escala al 110% en hover */
+}
+
+.parrafoAbout {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.parrafoAbout p {
+    display: block; /* Cambiar a bloque */
+    font-size: 18px;
+    color: #262766;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+
+.finalAbout h3{
+    text-align: center;
+    color: #14217e;
+}
