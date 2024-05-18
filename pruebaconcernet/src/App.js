@@ -1,9 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import Dashboard from "./Dashboard";
+import Dashboard from "./Components/Dashboard";
 import AuthProvider from "./AuthProvider";
 import PrivateRoute from "./PrivateRoute";
-import Login from './Login';
-import "./Styles/index.css";
+import Login from './Components/Login';
 
 function App() {
   return (
