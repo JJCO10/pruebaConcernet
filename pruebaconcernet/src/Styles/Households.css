@@ -1,0 +1,90 @@
+.households__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ajusta el ancho según tu preferencia */
+}
+
+.resumen{
+    text-align: center;
+}
+
+.resumen h1{
+    color: #14217e;
+    text-align: center;
+}
+
+.resumen h2 {
+    text-align: center; /* Alinea el texto al centro */
+    color: #14217e;
+    width: 60%;
+    margin: auto; /* Centra el elemento horizontalmente */
+}
+
+.resumen h1,
+.resumen h2,
+.frente,
+.baño,
+.patio,
+.cuartos,
+.salonPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px; /* Espacio entre cada sección */
+}
+
+.frente,
+.baño,
+.patio,
+.cuartos,
+.salonPrincipal {
+    width: 70%; /* Ancho del contenedor de imagen y texto */
+}
+
+.frente img,
+.baño img,
+.patio img,
+.cuartos img,
+.salonPrincipal img {
+    width: 300px; /* Tamaño de la imagen aumentado a 300px */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    border: 2px solid #ccc; /* Borde de 2px sólido gris */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Transición de la animación */
+}
+
+.frente img:hover,
+.baño img:hover,
+.patio img:hover,
+.cuartos img:hover,
+.salonPrincipal img:hover {
+    transform: scale(1.1); /* Escala al 110% en hover */
+}
+
+.descripcionFrente,
+.descripcionBaño,
+.descripcionPatio,
+.descripcionCuartos,
+.descripcionSalonPrincipal {
+    text-align: justify;
+    flex-grow: 1;
+    color: #283593; /* Color azul oscuro para los textos */
+}
+
+.descripcionFrente h3,
+.descripcionBaño h3,
+.descripcionPatio h3,
+.descripcionCuartos h3,
+.descripcionSalonPrincipal h3 {
+    margin-top: 0;
+    color: #1a237e; /* Color azul oscuro para los títulos */
+}
+
+.descripcionFrente p,
+.descripcionBaño p,
+.descripcionPatio p,
+.descripcionCuartos p,
+.descripcionSalonPrincipal p {
+    margin-top: 0;
+}
