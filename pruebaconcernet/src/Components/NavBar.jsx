@@ -14,8 +14,8 @@ const NavBar = () => {
                     <li>
                         <Link to="/Dashboard">Principal</Link>
                     </li>
-                    <li><Link to="/Espacios">Espacios</Link></li>
-                    <li><Link to="/Viviendas">Viviendas</Link></li>
+                    <li><Link to="/Spaces">Espacios</Link></li>
+                    <li><Link to="/Households">Viviendas</Link></li>
                     <li><Link to="/About">Acerca de</Link></li>
                     <li><Link to="/Login">Cerrar sesión</Link></li>
                 </ul>
