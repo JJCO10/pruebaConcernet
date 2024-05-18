@@ -1,6 +1,7 @@
 import NavBar from "./Components/NavBar";
 import fachada from "./Images/fachada.jpg";
 
+
 const Dashboard = () => {
     return(
         <div className="container">

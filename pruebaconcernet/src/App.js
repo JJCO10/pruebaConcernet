@@ -1,9 +1,9 @@
-import './Styles/App.css';
 import { Routes, Route } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import AuthProvider from "./AuthProvider";
 import PrivateRoute from "./PrivateRoute";
 import Login from './Login';
+import "./Styles/index.css";
 
 function App() {
   return (

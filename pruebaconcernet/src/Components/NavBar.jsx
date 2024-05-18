@@ -1,19 +1,30 @@
 import { Link } from "react-router-dom";
 import React from 'react';
+import "../Styles/NavBar.css";
 
 
 const NavBar = () => {
     return (
-        <nav>
-            <ul>
-                <li>
-                    <Link to="/Dashboard">Home</Link>
-                </li>
-                <li><Link to="/products">Productos</Link></li>
-                <li><Link to="/about">Acerca de</Link></li>
-                <li><Link to="/login">Inciar sesión</Link></li>
-            </ul>
-        </nav>
+        <body>
+            <nav>
+                <div className="Titulo">
+                    <h1>ConCerNet</h1>
+                </div>
+                <ul>
+                    <li>
+                        <Link to="/Dashboard">Principal</Link>
+                    </li>
+                    <li><Link to="/Espacios">Espacios</Link></li>
+                    <li><Link to="/Viviendas">Viviendas</Link></li>
+                    <li><Link to="/About">Acerca de</Link></li>
+                    <li><Link to="/Login">Cerrar sesión</Link></li>
+                </ul>
+                <div class="busqueda-bar">
+                <input type="text" placeholder="Buscar..."/>
+                <button type="submit">Buscar</button>
+            </div>
+            </nav>
+        </body>
     );
 }
 export default NavBar;
