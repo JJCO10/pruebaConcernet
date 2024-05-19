@@ -1,140 +1,80 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
+.general {
+    font-family: Arial, sans-serif;
+    background-color: #dbdbf3;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: url('../Images/login.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
+    height: 100vh;
+    margin: 0;
 }
 
 form {
-    width: 420px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 2px solid rgba(255, 255, 255, .1);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    color: #fff;
+    background: white;
+    padding: 40px;
     border-radius: 10px;
-    padding: 30px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
 }
 
-form h1 {
-    font-size: 36px;
-    text-align: center;
+h1 {
     margin-bottom: 20px;
+    color: #14217e;
 }
 
 .form_control {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    margin: 20px 0;
-}
-
-form input {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 40px;
-    font-size: 16px;
-    color: white;
-    padding: 10px 45px 10px 20px;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 .form_control label {
-    position: absolute;
-    top: -20px;
-    left: 20px;
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.form_control input::placeholder {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.form_control i {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-form .remember-forgot {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14.5px;
-    margin: -15px 0 15px;
-}
-
-.remember-forgot label {
-    display: flex;
-    align-items: center;
-}
-
-.remember-forgot label input {
-    display: inline-block;
-    accent-color: #fff;
-    margin-right: 3px;
-}
-
-.remember-forgot a {
-    text-decoration: none;
-    color: white;
-}
-
-.remember-forgot a:hover {
-    text-decoration: underline;
-}
-
-form .btn-submit {
-    width: 100%;
-    height: 45px;
-    background: #fff;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    cursor: pointer;
-    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
     color: #333;
-    font-weight: 600;
-    margin-top: 20px;
 }
 
-form .link-registrarse {
-    font-size: 14.5px;
-    text-align: center;
-    margin: 20px 0 15px;
+.form_control input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
 }
 
-.link-registrarse p a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
+.form_control input:focus {
+    border-color: #14217e;
+    outline: none;
 }
 
-.link-registrarse p a:hover {
-    text-decoration: underline;
+.btn-submit {
+    background-color: #14217e;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background-color: #0f1a63;
 }
 
 .error-message {
     color: red;
-    text-align: center;
     margin-bottom: 20px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
